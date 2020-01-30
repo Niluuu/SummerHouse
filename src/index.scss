@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+.p-sm {
+  padding: 5px;
+}
+
+.p-md {
+  padding: 8px;
+}
+
+.p-lg {
+  padding: 12px;
+}
+
+.p-rl-sm {
+  padding: 0px 5px;
+}
+
+.p-rl-md {
+  padding: 0px 8px;
+}
+
+.p-rl-lg {
+  padding: 0px 12px;
+}
+
+
+.p-tb-sm {
+  padding: 5px 0px;
+}
+
+.p-tb-md {
+  padding: 8px 0px;
+}
+
+.p-tb-lg {
+  padding: 12px 0px;
+}
+
+.m-sm {
+  margin: 5px;
+}
+
+.m-md {
+  margin: 8px;
+}
+
+.m-lg {
+  margin: 12px;
+}
+
+
+.header-menu {
+  position: 'fixed'; 
+  z-index: 1; 
+  width: '100%',;
+  background: '#fff';
+}
+
+.ant-layout-header {
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, .1);
+}
+
+.float-right-menu {
+  .float-right {
+    position: relative;
+    float: right;
+  } 
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover {
+    color: transparent;
+    border-bottom: none;
+}
+
+.ant-menu-horizontal > .ant-menu-item {
+  border-bottom: none;
+}
+
+.ant-menu-item .anticon {
+  margin-right: 0px;
+}
+
+.ant-menu-item a {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.ant-layout-content {
+  margin: 117px 16px 0px !important;
+}
+
+
+.ant-card-meta-description {
+  line-height: initial;
+}
