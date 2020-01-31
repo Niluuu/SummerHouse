@@ -8,6 +8,7 @@ import Register from "./pages/Register"
 
 import NotFound from "./pages/NotFound"
 import Footer from "./components/footer"
+import Filter from "./pages/Filter"
 
 
 function App () {
@@ -16,9 +17,10 @@ function App () {
       <Nav />
       <Switch>
         <Route exact path="/" component={Index} />
-        <Route path="/detail" component={Details} />
+        <Route path="/detail(/:id)" component={Details} />
         <Route path="/profile" component={Profile} />
         <Route path="/register" component={Register} />
+        <Route path="/:type" component={Filter} />
         <Route component={NotFound} />
       </Switch>
       <Footer />

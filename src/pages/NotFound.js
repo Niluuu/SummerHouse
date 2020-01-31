@@ -7,7 +7,7 @@ export class NotFound extends Component {
     return (
       <Layout style={{ margin: '24px 16px 0' }}>
         <Row>
-          <Col span={12} offset={6} style={{ background: "red" }}>
+          <Col span={12} offset={6}>
             <Result
               status="404"
               title="404"

@@ -103,3 +103,27 @@
 .ant-card-meta-description {
   line-height: initial;
 }
+
+.ant-card-meta-description{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.filter-form-col {
+  margin: 5px 15px 0px 0px  !important;
+  padding: 16px !important;
+  background: #eee !important;
+  border-radius: 2px !important;
+}
+
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
