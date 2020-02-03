@@ -1,7 +1,9 @@
 import React from 'react'
-import { Card } from 'antd';
+import { Card, Icon, Avatar, Typography } from 'antd';
 import { Link } from "react-router-dom"
-const { Meta } = Card;
+const { Meta } = Card
+const { Text, Title } = Typography
+
 
 const FilteredCards = ({ data }) => (
   <Link to={`/detail/${data.id}`} >
@@ -16,8 +18,14 @@ const FilteredCards = ({ data }) => (
           backgroundRepeat: 'no-repeat',
           height: 180,
         }}></div>}
+      actions={[
+        <div>
+          <Icon type="compass" key="setting" />
+        </div>,
+        <div>Price: {data.price} sum</div>,
+      ]}
     >
-      <Meta title={data.name} description={data.text} className="card-menta" />
+      <Meta title={data.name} description={data.location} className="card-menta" />
     </Card>
   </Link>
 );

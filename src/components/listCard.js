@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const { Meta } = Card;
 
 const ListCard = ({ data, small }) => (
-  <Link to={`/${data.type}`} >
+  <Link to={`/filter/${data.type}`} >
     <Card
       hoverable
       style={!small ? { width: 360, maxWidth: 360, minHeight: 200 } : { width: 260, maxWidth: 260, minHeight: 200 }}

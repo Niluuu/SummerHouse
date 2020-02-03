@@ -55,7 +55,7 @@ export class Nav extends Component {
             style={{ lineHeight: '64px' }}
           >
             <Menu.Item key="1"><Link to="/"><img src={Logo} /></Link></Menu.Item>
-            <Menu.Item key="2"><Link to="/detail">Hotels</Link></Menu.Item>
+            <Menu.Item key="2"><Link to="/catalog">Hotels</Link></Menu.Item>
             <Menu.Item key="3"><Link to="/register">Summer houses/houses</Link></Menu.Item>
             <Menu.Item key="4"><Link to="/detail">Resorts</Link></Menu.Item>
             <Menu.Item key="5"><Link to="/sanatorium">Sanatorium</Link></Menu.Item>
