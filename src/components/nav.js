@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Layout, Menu, Icon, Row, Col, Button } from 'antd'
+import { Layout, Menu, Icon, Col, Button } from 'antd'
 import { Link } from "react-router-dom"
 import Logo from "../img/logo.png"
 import SelectLeng from './selectLeng'
 import { Typography } from 'antd'
 
-const { Header } = Layout
+const { Header, Sider } = Layout
 const { Text } = Typography
 
 
@@ -14,9 +14,10 @@ export class Nav extends Component {
     return (
       <Layout>
         {/* mobile */}
-        {/* <Sider
+        <Sider
           breakpoint="lg"
           collapsedWidth="0"
+          theme="light"
           onBreakpoint={broken => {
             console.log(broken);
           }}
@@ -25,7 +26,7 @@ export class Nav extends Component {
           }}
         >
           <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+          <Menu mode="inline" defaultSelectedKeys={['4']}>
             <Menu.Item key="1">
               <Icon type="user" />
               <span className="nav-text">nav 1</span>
@@ -43,7 +44,7 @@ export class Nav extends Component {
               <span className="nav-text">nav 4</span>
             </Menu.Item>
           </Menu>
-        </Sider> */}
+        </Sider>
 
         <Header
           theme="light"
@@ -55,14 +56,14 @@ export class Nav extends Component {
             style={{ lineHeight: '64px' }}
           >
             <Menu.Item key="1"><Link to="/"><img src={Logo} /></Link></Menu.Item>
-            <Menu.Item key="2"><Link to="/catalog">Hotels</Link></Menu.Item>
-            <Menu.Item key="3"><Link to="/register">Summer houses/houses</Link></Menu.Item>
-            <Menu.Item key="4"><Link to="/detail">Resorts</Link></Menu.Item>
-            <Menu.Item key="5"><Link to="/sanatorium">Sanatorium</Link></Menu.Item>
-            <Menu.Item key="6"><Link to="/tour">Tour</Link></Menu.Item>
-            <Menu.Item key="7"><Link to="/">More</Link></Menu.Item>
+            <Menu.Item key="2" className="menu-item" ><Link to="/catalog">Hotels</Link></Menu.Item>
+            <Menu.Item key="3" className="menu-item"><Link to="/register">Summer houses/houses</Link></Menu.Item>
+            <Menu.Item key="4" className="menu-item"><Link to="/detail">Resorts</Link></Menu.Item>
+            <Menu.Item key="5" className="menu-item"><Link to="/sanatorium">Sanatorium</Link></Menu.Item>
+            <Menu.Item key="6" className="menu-item"><Link to="/tour">Tour</Link></Menu.Item>
+            <Menu.Item key="7" className="menu-item"><Link to="/">More</Link></Menu.Item>
             <Menu.Item className="float-right-menu">
-              <Col className="float-right" span={8}>
+              <Col className="" md={20} xs={{ span: 20, offset: 2 }} lg={{ span: 18, offset: 0 }} >
                 <Button type="danger" shape="circle" className="m-md">
                   <Icon type="heart" />
                 </Button>

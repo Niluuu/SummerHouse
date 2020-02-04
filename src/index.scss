@@ -127,3 +127,38 @@
 #components-form-demo-normal-login .login-form-button {
   width: 100%;
 }
+
+.order-title {
+  text-align: center;
+  background: #0392ce;
+  font-size: 30px !important;
+  color: #fff !important;
+  border-radius: 2px;
+}
+
+.order-price {
+  text-align: center;
+  border: 1px solid #0392ce;
+  font-size: 20px !important;
+  color: #0392ce !important;
+  border-radius: 2px;
+}
+
+.ant-layout-sider {
+  display: none !important;
+}
+
+@media (min-width: 0px) and (max-width: 982px) { 
+  .ant-menu-horizontal .menu-item {
+    display: none !important;
+  }
+  .ant-layout-sider {
+    display: block !important;
+  }
+  .ant-layout-sider-zero-width-trigger {
+    z-index: 100 !important; 
+    top: 11px !important;
+    position: fixed !important;
+    right: inherit !important;
+  }
+} 

@@ -13,9 +13,17 @@ export class Index extends Component {
       <Layout>
         <Content style={{ margin: '24px 16px 0' }}>
           <Row>
-            <Col span={15} offset={5}>
+            <Col md={20} xs={{ span: 20, offset: 2 }} lg={{ span: 15, offset: 5 }} >
               <List
-                grid={{ gutter: 20, column: 3 }}
+                grid={{
+                  gutter: 16,
+                  xs: 1,
+                  sm: 2,
+                  md: 2,
+                  lg: 2,
+                  xl: 3,
+                  xxl: 3,
+                }}
                 dataSource={hotels}
                 renderItem={item => (
                   <List.Item>
@@ -26,7 +34,15 @@ export class Index extends Component {
             <Col span={15} offset={5}>
               <Title level={4} type="primary">Blog</Title>
               <List
-                grid={{ gutter: 10, column: 4 }}
+                grid={{
+                  gutter: 16,
+                  xs: 1,
+                  sm: 2,
+                  md: 4,
+                  lg: 4,
+                  xl: 6,
+                  xxl: 3,
+                }}
                 dataSource={blog}
                 renderItem={item => (
                   <List.Item>
