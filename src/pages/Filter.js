@@ -27,7 +27,7 @@ export class Filter extends Component {
             </Col>
           </Row>
           <Row>
-            <Col span={15} offset={5}>
+            <Col xs={{ span: 15, offset: 1 }} lg={{ span: 15, offset: 3 }}>
               <Row>
                 <Col span={6}>
                   <FilterForm />
@@ -36,7 +36,15 @@ export class Filter extends Component {
                   <Text underline className="m-sm" >{params.type}/</Text>
                   <Title level={2} ><span style={{ textTransform: 'capitalize' }} >{params.type}</span>,{params.type} in Uzbekistan - prices, photos, online booking</Title>
                   <List
-                    grid={{ gutter: 20, column: 2 }}
+                    grid={{
+                      gutter: 16,
+                      xs: 1,
+                      sm: 2,
+                      md: 2,
+                      lg: 2,
+                      xl: 2,
+                      xxl: 2,
+                    }}
                     dataSource={hotels}
                     renderItem={item => (
                       <List.Item>

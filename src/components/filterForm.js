@@ -25,7 +25,7 @@ export class FilterForm extends Component {
     return (
       <Layout>
         <Content className="filter-form-col" style={{ background: "#D4D5D5", borderRadius: 2 }}>
-          <Row>
+          <Row type="flex" justify="space-between">
             <Text strong>Region</Text>
             <Select defaultValue="lucy" style={{ width: 218 }} onChange={handleChange}>
               <Option value="jack">Jack</Option>
@@ -33,7 +33,7 @@ export class FilterForm extends Component {
           </Row>
           <br />
 
-          <Row>
+          <Row type="flex" justify="space-between">
             <Text strong>District</Text>
             <Select defaultValue="lucy" style={{ width: 218 }} onChange={handleChange}>
               <Option value="jack">Jack</Option>
@@ -41,7 +41,7 @@ export class FilterForm extends Component {
           </Row>
           <br />
 
-          <Row>
+          <Row type="flex" justify="space-between">
             <Text strong>Arrival- Departure</Text>
             <RangePicker
               defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
@@ -51,7 +51,7 @@ export class FilterForm extends Component {
           </Row>
           <br />
 
-          <Row>
+          <Row type="flex" justify="space-between">
             <Text strong>Sort</Text>
             <Select defaultValue="lucy" style={{ width: 218 }} onChange={handleChange}>
               <Option value="jack">Jack</Option>
@@ -64,9 +64,7 @@ export class FilterForm extends Component {
             <Slider range defaultValue={[20, 50]} />
           </Row>
           <br />
-
         </Content>
-
       </Layout>
     )
   }
